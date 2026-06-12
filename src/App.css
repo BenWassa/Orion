@@ -1,0 +1,40 @@
+:root {
+  --bg-color: #0a0b10;
+  --text-primary: #f0f2f5;
+  --text-secondary: #a0aec0;
+  --accent-gold: #d4af37;
+  --accent-blue: #4a90e2;
+  --node-bg: #1a1f2e;
+}
+
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+body, html {
+  font-family: 'Merriweather', serif;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.stars-bg {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at center, #1b2735 0%, #090a0f 100%);
+  z-index: -1;
+}
+
+.hub-header {
+  text-align: center;
+  padding: 2rem;
+}

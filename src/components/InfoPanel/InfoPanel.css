@@ -1,0 +1,38 @@
+.info-panel {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 320px;
+  background: rgba(26, 31, 46, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.info-panel.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-40%);
+}
+
+.info-panel h2 {
+  color: var(--accent-gold);
+  margin-bottom: 1rem;
+}
+
+.action-btn {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--accent-gold);
+  padding: 0.6rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 100%;
+}
+.action-btn:hover:not(:disabled) {
+  background: var(--accent-gold);
+  color: #000;
+}
