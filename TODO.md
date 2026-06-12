@@ -7,18 +7,18 @@ This backlog turns the commission docs into an implementation plan. Keep `docs/c
 - [x] Move active app code into `src/`.
 - [x] Archive legacy static and scaffold files.
 - [x] Move commission docs into `docs/commission-pack/`.
-- [x] Choose the primary stack: React, Vite, TypeScript, Express.
+- [x] Choose the primary stack: React, Vite, TypeScript.
 - [x] Add TypeScript and build configuration.
-- [ ] Add project status labels to the registry model.
-- [ ] Decide deployment target and document it.
+- [x] Add project status labels to the registry model.
+- [x] Decide deployment target and document it.
 - [ ] Create initial GitHub issues from this backlog.
 
 ## Phase 1 — Registry And Cards
 
-- [ ] Create `src/data/projects.ts`.
-- [ ] Define the `OrionProject` TypeScript interface.
-- [ ] Seed the registry with known projects from the commission docs.
-- [ ] Add status, maturity, type, domain, medium, audience, and link fields.
+- [x] Create `src/data/projects.ts`.
+- [x] Define the `OrionProject` TypeScript interface.
+- [x] Seed the registry with known projects from the commission docs.
+- [x] Add status, maturity, type, domain, medium, audience, and link fields.
 - [ ] Build reusable `ProjectCard`.
 - [ ] Build `ProjectTag` and status chip components.
 - [ ] Add type, status, and domain filters.
