@@ -8,6 +8,8 @@ The product should be useful after Sprint 2, impressive after Sprint 4, and poli
 
 ## Sprint 0 — Product Lock and Repo Preparation
 
+Status: complete enough to proceed. The active repo is now React/Vite/TypeScript, static-deployable, and registry-backed.
+
 ### Goal
 
 Freeze the product definition and prepare the repo for focused implementation.
@@ -23,12 +25,12 @@ Freeze the product definition and prepare the repo for focused implementation.
 
 ### Tasks
 
-- [ ] Add `00_ORION_PRODUCT_COMMISSION.md`.
-- [ ] Add `01_ORION_INFORMATION_ARCHITECTURE.md`.
-- [ ] Add `02_ORION_PROJECT_REGISTRY_DRAFT.md`.
-- [ ] Add `03_ORION_SPRINT_PLAN.md`.
-- [ ] Add project status labels.
-- [ ] Create `src/data/projects.ts` or `data/projects.json`.
+- [x] Add `00_ORION_PRODUCT_COMMISSION.md`.
+- [x] Add `01_ORION_INFORMATION_ARCHITECTURE.md`.
+- [x] Add `02_ORION_PROJECT_REGISTRY_DRAFT.md`.
+- [x] Add `03_ORION_SPRINT_PLAN.md`.
+- [x] Add project status labels.
+- [x] Create `src/data/projects.ts` or `data/projects.json`.
 - [ ] Create initial issue list from this sprint plan.
 
 ### Acceptance Criteria
@@ -37,7 +39,17 @@ Freeze the product definition and prepare the repo for focused implementation.
 - Project list is present in machine-readable form.
 - No one can confuse Orion with a journaling app or separate product universe.
 
+### Completion Notes
+
+- Product source of truth: `docs/commission-pack/`.
+- Implementation source of truth for project inventory: `src/data/projects.ts`.
+- Current deployment direction: static build output from Vite.
+- Backend/server work has been intentionally removed from the active path.
+- Remaining Sprint 0 administrative task: create GitHub issues from `TODO.md` or this sprint plan.
+
 ## Sprint 1 — Data Registry and Card System
+
+Status: partially complete. Registry data and types exist; UI consumption is still pending.
 
 ### Goal
 
@@ -52,12 +64,18 @@ Create the project registry and reusable project cards.
 
 ### Tasks
 
-- [ ] Implement `projects.ts` or `projects.json`.
-- [ ] Define TypeScript interface or schema.
+- [x] Implement `projects.ts` or `projects.json`.
+- [x] Define TypeScript interface or schema.
 - [ ] Build `ProjectCard`.
 - [ ] Build `ProjectTag` / chip components.
 - [ ] Add filters for type, status, domain.
 - [ ] Add placeholder links for repo/live URLs.
+
+### Implementation Notes
+
+- Build shared card/chip/filter components before adding pages so Home, Library, Lab, Map, Guide results, and Project Detail can reuse the same presentation model.
+- The current visible Core Map still uses hardcoded Gate data. Replace or bridge it after registry-backed card and filter primitives exist.
+- Add graceful handling for missing `repoUrl` and `liveUrl` rather than blocking card rendering.
 
 ### Acceptance Criteria
 

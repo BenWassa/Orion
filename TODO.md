@@ -2,6 +2,29 @@
 
 This backlog turns the commission docs into an implementation plan. Keep `docs/commission-pack/` as the product source of truth and update this file as work lands.
 
+## Current Upgrade Review
+
+Completed setup:
+
+- React/Vite/TypeScript is the active stack.
+- Static deployment is the intended path; there is no active backend.
+- Legacy static and original scaffold files are archived under `archive/`.
+- Central project data exists in `src/data/projects.ts`.
+- Registry types, status labels, maturity, medium, audience, and cautions are modeled in `src/types.ts`.
+
+Next implementation priority:
+
+- Finish Sprint 1 before expanding pages: build `ProjectCard`, chip components, filters, and empty states from the central registry.
+- Then replace the prototype map-first screen with the Sprint 2 Home page.
+- Add routing only when Home, Library, Lab, Map, Guide, About, and project detail surfaces are ready to share layout/navigation.
+
+Known risks:
+
+- The current visible Core Map is still hardcoded and does not consume the registry.
+- Project URLs are not yet audited or present in the registry.
+- The graph report still mostly reflects legacy/static utilities, so it is useful for history but not yet a complete map of the active React app.
+- `npm install --package-lock-only` previously reported two npm audit findings; handle dependency audit separately from the MVP build path.
+
 ## Phase 0 — Repo And Product Lock
 
 - [x] Move active app code into `src/`.

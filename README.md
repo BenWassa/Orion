@@ -39,3 +39,9 @@ Type-checks the app and builds the static frontend.
 ## Current Experience
 
 The app renders the Core Map with five Gates: Skywalker, Sankofa, Agoge, Ares, and Orpheus. Selecting a Gate opens its information panel. Project inventory now lives in `src/data/projects.ts` and should be the source of truth for cards, filters, guide results, and future detail pages.
+
+## Upgrade Path
+
+The next implementation pass should complete Sprint 1 from `docs/commission-pack/03_ORION_SPRINT_PLAN.md`: reusable project cards, chips, filters, and empty states driven by `src/data/projects.ts`.
+
+After Sprint 1, build the real Home page, then Library/Lab, Guide, Map, project details, design-system polish, and QA/deployment in that order. Current completion and risk notes live in `docs/commission-pack/06_ORION_UPGRADE_REVIEW.md`.

@@ -10,6 +10,7 @@ This folder contains a repo-ready product commission and sprint plan for rebuild
 - `03_ORION_SPRINT_PLAN.md` — sprint-by-sprint build plan.
 - `04_ORION_DESIGN_SYSTEM_BRIEF.md` — visual, copy, component, motion, and accessibility direction.
 - `05_ORION_BUILD_PROMPT.md` — condensed implementation prompt for an AI coding agent.
+- `06_ORION_UPGRADE_REVIEW.md` — current completion notes, risks, and recommended next implementation sequence.
 
 ## Recommended Repo Location
 
@@ -20,3 +21,9 @@ Place these in one of:
 - `Orion/planning/`
 
 Then begin with Sprint 0.
+
+## Current Implementation Note
+
+Sprint 0 is complete enough for implementation to proceed: the repo is a React/Vite/TypeScript static app, the legacy static implementation is archived, and the project registry exists at `src/data/projects.ts`.
+
+The next durable upgrade is Sprint 1: connect reusable project cards, status/domain chips, and filters to the registry before building the full Home, Library, Lab, Guide, and Map surfaces.
