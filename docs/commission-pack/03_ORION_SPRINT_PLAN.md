@@ -278,6 +278,7 @@ Make Orion publicly safe and stable.
 
 ### Tasks
 
+- [ ] Add `.nvmrc` or `engines` documenting Node 20+.
 - [ ] Test keyboard navigation.
 - [ ] Test screen-reader labels.
 - [ ] Test color contrast.

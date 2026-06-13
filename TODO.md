@@ -127,6 +127,7 @@ Acceptance check: Orion feels like a calm, precise observatory, not a fantasy me
 
 ## Phase 8 — QA And Deployment
 
+- [ ] Add `.nvmrc` or `engines` documenting Node 20+.
 - [ ] Test keyboard navigation.
 - [ ] Test screen-reader labels.
 - [ ] Test color contrast.

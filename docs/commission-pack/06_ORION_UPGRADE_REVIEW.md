@@ -42,6 +42,7 @@ The repo now has a central machine-readable registry at `src/data/projects.ts` a
 
 ## Immediate Implementation Checklist
 
+- [ ] Add `.nvmrc` or `engines` documenting Node 20+ before CI/deployment work. The current local Node is v24.11.1, and `react-router-dom@7.17.0` requires Node 20 or newer.
 - [ ] Add `src/components/ProjectCard/ProjectCard.tsx`.
 - [ ] Add `src/components/ProjectCard/ProjectCard.css`.
 - [ ] Add shared chip components for type, status, and domain.
@@ -55,8 +56,11 @@ The repo now has a central machine-readable registry at `src/data/projects.ts` a
 ## Risks To Track
 
 - Registry content is seeded from the commission draft and still needs repo/live URL audit.
+- Registry copy should get a public-readiness pass before launch, including punctuation cleanup where setup normalized apostrophes.
 - Some project classifications remain product decisions, especially `Psi`, `static`, and `pantheon`.
 - The current visible UI is not yet representative of the final IA.
+- Static deployment target is chosen in principle but still needs exact GitHub Pages or host-specific instructions.
+- `lucide-react`, `clsx`, and `tailwind-merge` are installed for the upcoming UI pass; remove any that remain unused after Sprint 1.
 - Npm audit reported two dependency findings during setup; resolve separately so dependency churn does not distract from MVP architecture.
 - Graphify currently provides limited active-app architecture value because the React app is still small.
 
